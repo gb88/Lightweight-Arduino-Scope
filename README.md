@@ -16,3 +16,13 @@ Arduino Mega 2560
 - 8000 samples at each time
 - Free Run mode or Trigger mode with the trigger level, trigger delay and trigger edge configurable by serial commands
 
+Two simple interface has been developed in python the following library are needed:
+- os
+- wx
+- serial
+- serial.tools.list_ports
+- matplotlib
+- numpy 
+- pylab
+
+just upload the firmware on the Arduino and 
