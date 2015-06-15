@@ -1,5 +1,5 @@
 # Lightweight-Arduino-Scope
-Plug and play analog to digital acquisition system based on the Arduino board that requires only 48 bytes of RAM to run increasing the number of samples that can be acquired. The scope uses the UART to transfer the acquired data to the PC at 1Mbaud/s.
+Plug and play analog to digital acquisition system based on the Arduino board that requires only 48 bytes of RAM to run increasing the number of samples that can be acquired. The acquired samples are transfered to the PC with the serial port at 1Mbaud/s.
 No external hardware is needed for the TRIGGER.
 
 Arduino Uno
