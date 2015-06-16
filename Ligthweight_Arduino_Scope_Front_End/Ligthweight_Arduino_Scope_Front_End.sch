@@ -1,0 +1,389 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Ligthweight_Arduino_Scope_Front_End-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "16 jun 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM2902N U1
+U 1 1 55801987
+P 3400 3450
+F 0 "U1" H 3450 3650 60  0000 C CNN
+F 1 "LM2902N" H 3550 3250 50  0000 C CNN
+F 2 "" H 3400 3450 60  0000 C CNN
+F 3 "" H 3400 3450 60  0000 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55801A44
+P 1900 3050
+F 0 "R1" V 1980 3050 50  0000 C CNN
+F 1 "1M" V 1900 3050 50  0000 C CNN
+F 2 "" V 1830 3050 30  0000 C CNN
+F 3 "" H 1900 3050 30  0000 C CNN
+	1    1900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55801ACF
+P 1900 3650
+F 0 "R2" V 1980 3650 50  0000 C CNN
+F 1 "1M" V 1900 3650 50  0000 C CNN
+F 2 "" V 1830 3650 30  0000 C CNN
+F 3 "" H 1900 3650 30  0000 C CNN
+	1    1900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3200 1900 3350
+Wire Wire Line
+	1900 3350 1900 3500
+Text GLabel 1650 2800 0    60   Input ~ 0
+Signal+
+Text GLabel 1650 3900 0    60   Input ~ 0
+Signal-
+Wire Wire Line
+	1650 2800 1900 2800
+Wire Wire Line
+	1900 2800 1900 2900
+Wire Wire Line
+	1900 3800 1900 3900
+Wire Wire Line
+	1900 3900 1900 4650
+Wire Wire Line
+	1900 3900 1650 3900
+Wire Wire Line
+	2900 3350 1900 3350
+Connection ~ 1900 3350
+Wire Wire Line
+	2900 3550 2700 3550
+Wire Wire Line
+	2700 3550 2700 4000
+Wire Wire Line
+	2700 4000 4150 4000
+Wire Wire Line
+	4150 4000 4150 3450
+Wire Wire Line
+	3900 3450 4150 3450
+Wire Wire Line
+	4150 3450 4450 3450
+$Comp
+L LM2902N U1
+U 2 1 55801D08
+P 3450 4750
+F 0 "U1" H 3500 4950 60  0000 C CNN
+F 1 "LM2902N" H 3600 4550 50  0000 C CNN
+F 2 "" H 3450 4750 60  0000 C CNN
+F 3 "" H 3450 4750 60  0000 C CNN
+	2    3450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4650 2950 4650
+Connection ~ 1900 3900
+Wire Wire Line
+	2950 4850 2750 4850
+Wire Wire Line
+	2750 4850 2750 5300
+Wire Wire Line
+	2750 5300 4100 5300
+Wire Wire Line
+	4100 5300 4100 4750
+Wire Wire Line
+	3950 4750 4100 4750
+Wire Wire Line
+	4100 4750 4450 4750
+$Comp
+L LM2902N U1
+U 3 1 55801DB7
+P 6150 3550
+F 0 "U1" H 6200 3750 60  0000 C CNN
+F 1 "LM2902N" H 6300 3350 50  0000 C CNN
+F 2 "" H 6150 3550 60  0000 C CNN
+F 3 "" H 6150 3550 60  0000 C CNN
+	3    6150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 55801E2F
+P 4850 3650
+F 0 "R4" V 4930 3650 50  0000 C CNN
+F 1 "10k" V 4850 3650 50  0000 C CNN
+F 2 "" V 4780 3650 30  0000 C CNN
+F 3 "" H 4850 3650 30  0000 C CNN
+	1    4850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 55801ECC
+P 5250 4000
+F 0 "R5" V 5330 4000 50  0000 C CNN
+F 1 "10k" V 5250 4000 50  0000 C CNN
+F 2 "" V 5180 4000 30  0000 C CNN
+F 3 "" H 5250 4000 30  0000 C CNN
+	1    5250 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3650 5550 3650
+Wire Wire Line
+	5550 3650 5650 3650
+Connection ~ 5550 3650
+Wire Wire Line
+	4450 4750 4450 3650
+Wire Wire Line
+	4450 3650 4700 3650
+Connection ~ 4100 4750
+$Comp
+L R R3
+U 1 1 5580222F
+P 4600 3450
+F 0 "R3" V 4680 3450 50  0000 C CNN
+F 1 "10k" V 4600 3450 50  0000 C CNN
+F 2 "" V 4530 3450 30  0000 C CNN
+F 3 "" H 4600 3450 30  0000 C CNN
+	1    4600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 558022A3
+P 6100 4350
+F 0 "R6" V 6180 4350 50  0000 C CNN
+F 1 "10k" V 6100 4350 50  0000 C CNN
+F 2 "" V 6030 4350 30  0000 C CNN
+F 3 "" H 6100 4350 30  0000 C CNN
+	1    6100 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3650 5550 4350
+Wire Wire Line
+	5550 4350 5950 4350
+Wire Wire Line
+	6250 4350 6850 4350
+Wire Wire Line
+	6850 4350 6850 3550
+Wire Wire Line
+	6650 3550 6850 3550
+Wire Wire Line
+	6850 3550 7450 3550
+Wire Wire Line
+	4750 3450 5250 3450
+Wire Wire Line
+	5250 3450 5650 3450
+Wire Wire Line
+	5250 3850 5250 3450
+Connection ~ 5250 3450
+Connection ~ 4150 3450
+$Comp
+L R R7
+U 1 1 558025E4
+P 7600 3550
+F 0 "R7" V 7680 3550 50  0000 C CNN
+F 1 "1k" V 7600 3550 50  0000 C CNN
+F 2 "" V 7530 3550 30  0000 C CNN
+F 3 "" H 7600 3550 30  0000 C CNN
+	1    7600 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 6850 3550
+$Comp
+L C C1
+U 1 1 5580267C
+P 8100 3950
+F 0 "C1" H 8125 4050 50  0000 L CNN
+F 1 "4.7n" H 8125 3850 50  0000 L CNN
+F 2 "" H 8138 3800 30  0000 C CNN
+F 3 "" H 8100 3950 60  0000 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3550 8100 3550
+Wire Wire Line
+	8100 3550 8950 3550
+Wire Wire Line
+	8100 3550 8100 3800
+Wire Wire Line
+	5250 3450 5250 3450
+$Comp
+L LM2902N U1
+U 4 1 55802E00
+P 9450 3650
+F 0 "U1" H 9500 3850 60  0000 C CNN
+F 1 "LM2902N" H 9600 3450 50  0000 C CNN
+F 2 "" H 9450 3650 60  0000 C CNN
+F 3 "" H 9450 3650 60  0000 C CNN
+	4    9450 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 3550
+$Comp
+L R R8
+U 1 1 558030A4
+P 8650 3750
+F 0 "R8" V 8730 3750 50  0000 C CNN
+F 1 "4.7k" V 8650 3750 50  0000 C CNN
+F 2 "" V 8580 3750 30  0000 C CNN
+F 3 "" H 8650 3750 30  0000 C CNN
+	1    8650 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 3750 8900 3750
+Wire Wire Line
+	8900 3750 8950 3750
+Wire Wire Line
+	8400 3750 8400 4150
+Wire Wire Line
+	8400 4150 8400 4250
+Wire Wire Line
+	8400 4250 8400 5100
+Wire Wire Line
+	8400 4250 8100 4250
+Wire Wire Line
+	8100 4250 6050 4250
+Wire Wire Line
+	6050 4250 5250 4250
+Wire Wire Line
+	5250 4250 3300 4250
+Wire Wire Line
+	8100 4250 8100 4100
+$Comp
+L RVAR R9
+U 1 1 5580333B
+P 9350 4350
+F 0 "R9" V 9430 4300 50  0000 C CNN
+F 1 "10k" V 9270 4410 50  0000 C CNN
+F 2 "" H 9350 4350 60  0000 C CNN
+F 3 "" H 9350 4350 60  0000 C CNN
+	1    9350 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 4350 9100 4350
+Wire Wire Line
+	8900 3750 8900 4350
+Connection ~ 8900 3750
+Wire Wire Line
+	9600 4350 10200 4350
+Wire Wire Line
+	10200 4350 10200 3650
+Wire Wire Line
+	9950 3650 10200 3650
+Wire Wire Line
+	10200 3650 10600 3650
+Text GLabel 10600 3650 2    60   Input ~ 0
+A1
+Connection ~ 10200 3650
+Wire Wire Line
+	3300 4250 3300 3850
+Wire Wire Line
+	5250 4150 5250 4250
+Wire Wire Line
+	5250 4250 5250 5250
+Wire Wire Line
+	6050 4250 6050 3950
+Connection ~ 5250 4250
+Connection ~ 8100 4250
+Connection ~ 6050 4250
+Wire Wire Line
+	9350 4050 9350 4150
+Wire Wire Line
+	9350 4150 8400 4150
+Connection ~ 8400 4150
+Wire Wire Line
+	3350 5150 3350 5250
+Wire Wire Line
+	3350 5250 5250 5250
+Wire Wire Line
+	8400 5100 10600 5100
+Text GLabel 10600 5100 2    60   Input ~ 0
+GND
+Wire Wire Line
+	3300 3050 3300 2800
+Wire Wire Line
+	3300 2800 4300 2800
+Wire Wire Line
+	4300 2800 6050 2800
+Wire Wire Line
+	6050 2800 9350 2800
+Wire Wire Line
+	9350 2800 10600 2800
+Wire Wire Line
+	6050 2800 6050 3150
+Wire Wire Line
+	9350 2800 9350 3250
+Connection ~ 6050 2800
+Wire Wire Line
+	3350 4350 4300 4350
+Wire Wire Line
+	4300 4350 4300 2800
+Connection ~ 4300 2800
+Text GLabel 10600 2800 2    60   Input ~ 0
+5V
+Connection ~ 9350 2800
+Text Notes 10150 4650 2    60   ~ 0
+10k trimmer set around 4.7k\n
+Text Notes 8550 3450 2    60   ~ 0
+Anti Aliasing Filter Fc = 33.8 kHz
+Text Notes 5500 3300 2    60   ~ 0
+Signal+ - Signal-\n
+Text Notes 1750 3400 2    60   ~ 0
+0-5V BW=33.8kHz 
+Text Notes 9800 7550 2    60   ~ 0
+Lightweight Arduino Scope Analog Front End Example
+Text Notes 8800 7650 2    60   ~ 0
+24-05-2015\n
+Text Notes 10750 7650 2    60   ~ 0
+1.0
+Text Notes 9550 4150 0    60   ~ 0
+Gain Adjust\n
+Connection ~ 8400 4250
+$EndSCHEMATC
