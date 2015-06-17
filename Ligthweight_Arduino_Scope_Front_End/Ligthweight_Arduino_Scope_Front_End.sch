@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "16 jun 2015"
+Date "17 jun 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -269,7 +269,7 @@ L R R8
 U 1 1 558030A4
 P 8650 3750
 F 0 "R8" V 8730 3750 50  0000 C CNN
-F 1 "4.7k" V 8650 3750 50  0000 C CNN
+F 1 "10k" V 8650 3750 50  0000 C CNN
 F 2 "" V 8580 3750 30  0000 C CNN
 F 3 "" H 8650 3750 30  0000 C CNN
 	1    8650 3750
@@ -300,7 +300,7 @@ L RVAR R9
 U 1 1 5580333B
 P 9350 4350
 F 0 "R9" V 9430 4300 50  0000 C CNN
-F 1 "10k" V 9270 4410 50  0000 C CNN
+F 1 "1k" V 9270 4410 50  0000 C CNN
 F 2 "" H 9350 4350 60  0000 C CNN
 F 3 "" H 9350 4350 60  0000 C CNN
 	1    9350 4350
@@ -370,7 +370,7 @@ Text GLabel 10600 2800 2    60   Input ~ 0
 5V
 Connection ~ 9350 2800
 Text Notes 10150 4650 2    60   ~ 0
-10k trimmer set around 4.7k\n
+1k trimmer set around 0.5k\n
 Text Notes 8550 3450 2    60   ~ 0
 Anti Aliasing Filter Fc = 33.8 kHz
 Text Notes 5500 3300 2    60   ~ 0
@@ -380,7 +380,7 @@ Text Notes 1750 3400 2    60   ~ 0
 Text Notes 9800 7550 2    60   ~ 0
 Lightweight Arduino Scope Analog Front End Example
 Text Notes 8800 7650 2    60   ~ 0
-24-05-2015\n
+\n\n
 Text Notes 10750 7650 2    60   ~ 0
 1.0
 Text Notes 9550 4150 0    60   ~ 0
